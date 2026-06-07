@@ -68,5 +68,5 @@ const roleRes = await fetch(`https://discord.com/api/guilds/${guildId}/members/$
     return NextResponse.json({ error: 'Role assign failed', details: txt }, { status: 400 })
   }
 
-  return NextResponse.redirect(new URL('/success', req.url))
+ return NextResponse.redirect('https://noirwaifus.com/collections/private-vault')
 }
