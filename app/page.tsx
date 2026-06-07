@@ -5,22 +5,20 @@ export default function Home() {
     <main
       style={{
         minHeight: "100vh",
-        background:
-          "radial-gradient(circle at top, #3a2847 0%, #16111d 38%, #0c0911 100%)",
+        background: "radial-gradient(circle at top, #3a2847 0%, #16111d 38%, #0c0911 100%)",
         color: "#f7eefe",
         display: "grid",
         placeItems: "center",
         padding: "32px 20px",
-        fontFamily:
-          'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
+        fontFamily: 'Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
       }}
     >
       <section
         style={{
           width: "100%",
-          maxWidth: 760,
+          maxWidth: "760px",
           border: "1px solid rgba(255,255,255,0.12)",
-          borderRadius: 28,
+          borderRadius: "28px",
           padding: "48px 28px",
           background: "rgba(255,255,255,0.06)",
           boxShadow: "0 24px 80px rgba(0,0,0,0.38)",
@@ -32,66 +30,25 @@ export default function Home() {
           style={{
             display: "inline-flex",
             alignItems: "center",
-            gap: 8,
+            gap: "8px",
             padding: "8px 14px",
-            borderRadius: 999,
+            borderRadius: "999px",
             background: "rgba(255,255,255,0.08)",
             border: "1px solid rgba(255,255,255,0.12)",
-            fontSize: 13,
+            fontSize: "13px",
             letterSpacing: "0.08em",
             textTransform: "uppercase",
             color: "#f3cfff",
-            marginBottom: 22,
+            marginBottom: "22px",
           }}
         >
           Members Only
         </div>
-        gba(255,255,255,0.05)",
-            }}
-          >
-            Join Discord First
-          </a>
-        </div>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-            gap: 12,
-            textAlign: "left",
-          }}
-        >
-          {[
-            "Exclusive member-only drops",
-            "Early access before public release",
-            "Hidden art and bonus content",
-          ].map((item) => (
-            <div
-              key={item}
-              style={{
-                padding: "16px 16px",
-                borderRadius: 18,
-                background: "rgba(255,255,255,0.05)",
-                border: "1px solid rgba(255,255,255,0.08)",
-                color: "rgba(247,238,254,0.84)",
-                fontSize: 14,
-                lineHeight: 1.5,
-              }}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
-      </section>
-    </main>
-  );
-}
-
 
         <h1
           style={{
             fontSize: "clamp(2.4rem, 6vw, 4.6rem)",
-            lineHeight: 0.95,
+            lineHeight: "0.95",
             margin: "0 0 18px",
             fontWeight: 800,
             letterSpacing: "-0.04em",
@@ -102,24 +59,22 @@ export default function Home() {
 
         <p
           style={{
-            maxWidth: 560,
+            maxWidth: "560px",
             margin: "0 auto 16px",
             fontSize: "clamp(1rem, 2vw, 1.1rem)",
-            lineHeight: 1.7,
+            lineHeight: "1.7",
             color: "rgba(247,238,254,0.82)",
           }}
         >
-          Unlock the hidden side of NoirWaifus. This private area gives approved members
-          access to exclusive drops, unreleased artwork, and secret content you will not
-          find in the public shop.
+          Unlock the hidden side of NoirWaifus. This private area gives approved members access to exclusive drops, unreleased artwork, and secret content you will not find in the public shop.
         </p>
 
         <p
           style={{
-            maxWidth: 520,
+            maxWidth: "520px",
             margin: "0 auto 30px",
-            fontSize: 15,
-            lineHeight: 1.7,
+            fontSize: "15px",
+            lineHeight: "1.7",
             color: "rgba(247,238,254,0.62)",
           }}
         >
@@ -129,17 +84,17 @@ export default function Home() {
         <div
           style={{
             display: "flex",
-            gap: 14,
+            gap: "14px",
             justifyContent: "center",
             flexWrap: "wrap",
-            marginBottom: 32,
+            marginBottom: "32px",
           }}
         >
           <Link
             href="/api/auth/login"
             style={{
               padding: "15px 24px",
-              borderRadius: 999,
+              borderRadius: "999px",
               background: "linear-gradient(135deg, #ffb7ef 0%, #d69cff 100%)",
               color: "#170f1f",
               fontWeight: 800,
@@ -156,9 +111,47 @@ export default function Home() {
             rel="noreferrer"
             style={{
               padding: "15px 24px",
-              borderRadius: 999,
+              borderRadius: "999px",
               border: "1px solid rgba(255,255,255,0.18)",
               color: "#f7eefe",
               fontWeight: 700,
               textDecoration: "none",
-              background: "r
+              background: "rgba(255,255,255,0.05)",
+            }}
+          >
+            Join Discord First
+          </a>
+        </div>
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+            gap: "12px",
+            textAlign: "left",
+          }}
+        >
+          {[
+            "Exclusive member-only drops",
+            "Early access before public release",
+            "Hidden art and bonus content",
+          ].map((item) => (
+            <div
+              key={item}
+              style={{
+                padding: "16px",
+                borderRadius: "18px",
+                background: "rgba(255,255,255,0.05)",
+                border: "1px solid rgba(255,255,255,0.08)",
+                color: "rgba(247,238,254,0.84)",
+                fontSize: "14px",
+                lineHeight: "1.5",
+              }}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
