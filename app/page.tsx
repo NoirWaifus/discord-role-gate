@@ -46,6 +46,47 @@ export default function Home() {
         >
           Members Only
         </div>
+        gba(255,255,255,0.05)",
+            }}
+          >
+            Join Discord First
+          </a>
+        </div>
+
+        <div
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
+            gap: 12,
+            textAlign: "left",
+          }}
+        >
+          {[
+            "Exclusive member-only drops",
+            "Early access before public release",
+            "Hidden art and bonus content",
+          ].map((item) => (
+            <div
+              key={item}
+              style={{
+                padding: "16px 16px",
+                borderRadius: 18,
+                background: "rgba(255,255,255,0.05)",
+                border: "1px solid rgba(255,255,255,0.08)",
+                color: "rgba(247,238,254,0.84)",
+                fontSize: 14,
+                lineHeight: 1.5,
+              }}
+            >
+              {item}
+            </div>
+          ))}
+        </div>
+      </section>
+    </main>
+  );
+}
+
 
         <h1
           style={{
@@ -110,7 +151,7 @@ export default function Home() {
           </Link>
 
           <a
-            href="https://discord.gg/TU-ENLACE"
+            href="https://discord.gg/H9zuEXcsPN"
             target="_blank"
             rel="noreferrer"
             style={{
