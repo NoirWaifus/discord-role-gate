@@ -54,7 +54,8 @@ export default function Home() {
             overflow: "hidden",
             borderRadius: "32px",
             border: "1px solid rgba(255, 214, 230, 0.12)",
-            background: "linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)",
+            background:
+              "linear-gradient(180deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.03) 100%)",
             boxShadow: "0 30px 90px rgba(0,0,0,0.42)",
             padding: "40px 28px",
             backdropFilter: "blur(10px)",
@@ -67,7 +68,8 @@ export default function Home() {
               width: "180px",
               height: "180px",
               borderRadius: "999px",
-              background: "radial-gradient(circle, rgba(255,194,220,0.22) 0%, rgba(255,194,220,0) 72%)",
+              background:
+                "radial-gradient(circle, rgba(255,194,220,0.22) 0%, rgba(255,194,220,0) 72%)",
               pointerEvents: "none",
             }}
           />
@@ -119,12 +121,13 @@ export default function Home() {
                 alignItems: "center",
                 justifyContent: "center",
                 padding: "15px 26px",
-                border Radius: "999px",
+                borderRadius: "999px",
                 textDecoration: "none",
                 fontWeight: 700,
                 fontSize: "15px",
                 color: "#1a1017",
-                background: "linear-gradient(135deg, #ffd6e6 0%, #f0b8d2 55%, #e6a8c8 100%)",
+                background:
+                  "linear-gradient(135deg, #ffd6e6 0%, #f0b8d2 55%, #e6a8c8 100%)",
                 boxShadow: "0 14px 34px rgba(240, 184, 210, 0.28)",
                 fontFamily: `"Trebuchet MS", "Helvetica Neue", sans-serif`,
               }}
@@ -175,7 +178,8 @@ export default function Home() {
             style={{
               borderRadius: "28px",
               border: "1px solid rgba(255, 214, 230, 0.12)",
-              background: "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.025) 100%)",
+              background:
+                "linear-gradient(180deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.025) 100%)",
               padding: "28px 22px",
               boxShadow: "0 24px 70px rgba(0,0,0,0.35)",
             }}
@@ -200,7 +204,8 @@ export default function Home() {
             style={{
               borderRadius: "28px",
               border: "1px solid rgba(255, 214, 230, 0.12)",
-              background: "linear-gradient(180deg, rgba(32,19,28,0.88) 0%, rgba(17,11,18,0.95) 100%)",
+              background:
+                "linear-gradient(180deg, rgba(32,19,28,0.88) 0%, rgba(17,11,18,0.95) 100%)",
               padding: "26px 22px",
               boxShadow: "0 24px 70px rgba(0,0,0,0.32)",
             }}
@@ -230,7 +235,7 @@ export default function Home() {
             </p>
           </div>
         </div>
-        </section>
+      </section>
     </main>
   );
 }
