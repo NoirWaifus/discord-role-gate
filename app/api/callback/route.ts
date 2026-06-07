@@ -56,3 +56,18 @@ export async function GET(req: Request) {
   }
 
   const roleRes
+= await fetch(`https://discord.com/api/guilds/${guildId}/members/${userId}/roles/${roleId}`, {
+    method: 'PUT',
+    headers: {
+      Authorization: `Bot ${botToken}`,
+      'Content-Type': 'application/json',
+    },
+  })
+
+  if (!roleRes.ok && roleRes.status !== 204) {
+    const txt = await roleRes.text()
+    return NextResponse.json({ error: 'Role assign failed', details: txt }, { status: 400 })
+  }
+
+  return NextResponse.redirect(new URL('/success', req.url))
+}
