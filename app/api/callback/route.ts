@@ -55,14 +55,13 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: 'Join failed', details: txt }, { status: 400 })
   }
 
-  const roleRes
-= await fetch(`https://discord.com/api/guilds/${guildId}/members/${userId}/roles/${roleId}`, {
-    method: 'PUT',
-    headers: {
-      Authorization: `Bot ${botToken}`,
-      'Content-Type': 'application/json',
-    },
-  })
+const roleRes = await fetch(`https://discord.com/api/guilds/${guildId}/members/${userId}/roles/${roleId}`, {
+  method: 'PUT',
+  headers: {
+    Authorization: `Bot ${botToken}`,
+    'Content-Type': 'application/json',
+  },
+})
 
   if (!roleRes.ok && roleRes.status !== 204) {
     const txt = await roleRes.text()
